@@ -1,0 +1,117 @@
+
+
+
+
+            <!-- Topbar -->
+            <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+              <!-- page heading -->
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item align-items-center">
+                  <div class="d-sm-flex align-items-center">
+                    <h1 class="h3 mb-0 text-gray-800">Register New Student!</h1>  
+                  </div>
+                </li>
+
+              </ul>
+              <!-- Topbar Navbar -->
+              <ul class="navbar-nav ml-auto">
+      
+                <div class="topbar-divider d-none d-sm-block"></div>
+
+                <!-- Nav Item - User Information -->
+                <li class="nav-item dropdown no-arrow">
+                  <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="mr-2 d-none d-lg-inline text-gray-600 small">Course Instructor</span>
+                    <i class="fas fa-user-circle"></i>
+                  </a>
+                  
+                </li>
+                
+
+              </ul>
+            </nav>
+
+            <!-- Begin Page Content -->
+            <!-- container-fluid -->
+            <div class="container-fluid">
+            
+              <!-- Nested Row within Card Body -->
+              <div class="row">
+
+                <div class="col-lg-7">
+                    <div class="p-5">
+                        
+                      <form class="user" method="POST" action="/register-new" enctype="multipart/form-data">
+                          <div class="form-group">
+                            <input type="text" name="inputName" class="form-control form-control-user" id="inputName" placeholder="Name" required>     
+                          </div>
+                          <div class="form-group">
+                            <input type="number" name="inputRegi" class="form-control form-control-user" id="inputRegi" placeholder="Registration_no">
+                          </div>
+                          <div class="form-group row">
+                            <div class="col-sm-6 mb-3 mb-sm-0">
+                              <select name="inputGender" class="form-control dropdown" id="inputGender">
+                                <option value="">--Select Gender--</option>
+                                <option value="m">Male</option>
+                                <option value="f">Female</option>
+                              </select>
+                            </div>
+                            <div class="col-sm-6">
+                              <input type="date" name="inputRegiDate" class="form-control form-control-user" id="inputRegiDate" placeholder="date">
+                            </div>
+                          </div>
+
+                          <!-- Image upload input -->
+                          <!-- help - https://stackoverflow.com/a/35899401 -->
+                          <div class="form-group row">
+                              <div id="image-preview-div" style="display: none">
+                                <label for="exampleInputFile">Finger Print</label>
+                                <br>
+                                <img id="preview-img" src="noimage">
+                              </div>
+                              <input type="file" name="inputFingerprint" id="file">
+                          </div>
+                          <button type="submit" name="" class="btn btn-primary btn-user btn-block">
+                              Register Account
+                          </button>
+                          
+              
+                      </form>
+                        
+                    </div>
+
+                </div>
+
+                <div class="col-lg-5 card">
+                  <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">Instructions</h6>
+                  </div>
+                  <div class="card-body">
+                    <p>
+                      Enter your(student) name, regi_no, gender and register date and submit. You will be registered for any particular course.
+                    </p>
+                    {{!-- <p class="mb-0">
+                      Before working with this theme, you should become familiar with the Bootstrap framework, especially the utility classes.
+                    </p> --}}
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+  {{!-- <!-- Bootstrap core JavaScript-->
+  <script src="public/vendor/js/jquery.min.js"></script>
+  <script src="public/vendor/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="public/vendor/js/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="public/vendor/js/sb-admin-2.min.js"></script>
+
+  <!-- Image upload & Image preview plugin-->
+  <script src="public/vendor/js/upload-image.js"></script> --}}
+
+{{!-- </body>
+
+</html> --}}

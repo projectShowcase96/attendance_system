@@ -1,0 +1,138 @@
+
+
+
+
+        <!-- Topbar -->
+        <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+          <!-- page heading -->
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item align-items-center">
+              <div class="d-sm-flex align-items-center">
+                <h1 class="h3 mb-0 text-gray-800">{{ pageTitle }}</h1>  
+              </div>
+            </li>
+
+          </ul>
+          <!-- Topbar Navbar -->
+          <ul class="navbar-nav ml-auto">
+  
+            <div class="topbar-divider d-none d-sm-block"></div>
+
+            <!-- Nav Item - User Information -->
+            <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Course Instructor</span>
+                <i class="fas fa-user-circle"></i>
+              </a>
+              
+            </li>
+            
+
+          </ul>
+        </nav>
+
+        <!-- End of Topbar -->
+
+
+        <!-- Begin Page Content -->
+        <!-- container-fluid -->
+        <div class="container-fluid">
+
+          <!-- present student list GET form -->
+          <div class="row">
+            <div class= "col-lg-7 col-lg-5">
+                <div class="dropup center-block"> 
+                    <div class="p-5">
+                        <form class="form" method="GET" action="">
+                            <div class="form-group row">
+                                <select name="inputClassTopicId" class="form-control dropdown" id="inputClassTopicId">
+                                    <option value="">--Select Class Topic--</option>
+                                    {{#each classListData}}
+                                        <option value={{ this.class_id }}>
+                                            {{ this.topic }}
+                                        </option>
+                                    {{/each}}
+                                </select>
+                            </div>
+     
+                            <button type="submit" name="" class="btn btn-primary btn-user btn-block">
+                                Submit
+                            </button>        
+                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 card">
+                <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">Instructions</h6>
+                </div>
+                <div class="card-body">
+                    <p>
+                        Select Class topic name and Submit. You will have attendance record for all students on that particular class topic.
+                    </p>
+                    {{!-- <p class="mb-0">
+                        Before working with this theme, you should become familiar with the Bootstrap framework, especially the utility classes.
+                    </p> --}}
+                </div>
+            </div>
+          </div>
+          
+
+          {{!-- <!-- present student list -->
+          <div class="row">
+
+            <!-- present student list -->
+            <div class= "col-lg-7">
+              <div class="card shadow mb-4">
+                  <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">Student List</h6>
+                  </div>
+                  <div class="card-body">
+                    <div class="table-responsive">
+                      <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                        <thead>
+                          <tr>
+                            <th>Name</th>
+                            <th>Registration_no</th>
+                            <th>Gender</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          {{#each absentStudentList}}
+                          <tr>
+                            <td>{{ this.name }}</td>
+                            <td>{{ this.regi_no }}</td>
+                            <td>{{ this.gender }}</td>
+                          </tr>
+                          {{/each}}
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+          </div> --}}
+
+        </div>
+
+
+             
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>

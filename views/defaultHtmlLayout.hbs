@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>SB Admin 2 - Register</title>
+
+  <!-- Custom fonts for this template-->
+  <!-- public/vendor/css/all.min.css -->
+  <link rel="stylesheet" type="text/css" href={{hostName}}/static/vendor/css/all.min.css>
+
+  <!-- Custom styles for this template-->
+  <!-- public/vendor/css/sb-admin-2.min.css -->
+  <link rel="stylesheet" href={{hostName}}/static/vendor/css/sb-admin-2.min.css>
+
+</head>
+
+<body id="page-top">
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+              <div class="sidebar-brand-text mx-3">Attendance System</div>
+            </a>
+      
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+      
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item active">
+              <a class="nav-link" href="admin.html">
+                <!-- <i class="fas fa-fw fa-tachometer-alt"></i> -->
+                <i class="fas fa-tools"></i>
+                <span>Admin</span></a>
+            </li>
+      
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+      
+            <!-- Nav Item - Register New Student -->
+            <li class="nav-item">
+              <a class="nav-link" href={{hostName}}/register-new>
+                <!-- <i class="fas fa-fw fa-cog"></i> -->
+                <i class="fas fa-user-plus"></i>
+                <span>Register New Student</span>
+              </a>
+            </li>
+
+            <!-- Nav Item - Class Topic Entry -->
+            <li class="nav-item">
+              <a class="nav-link" href={{hostName}}/register-new-class>
+                <!-- <i class="fas fa-fw fa-cog"></i> -->
+                <i class="fas fa-clipboard-list"></i>
+                <span>Class Topic Entry</span>
+              </a>
+            </li>
+      
+            <!-- Nav Item - Take Attendance -->
+            <li class="nav-item">
+              <a class="nav-link collapsed" href={{hostName}}/take-attendance-per-topic>
+                <!-- <i class="fas fa-fw fa-wrench"></i> -->
+                <i class="fas fa-hand-point-up"></i>
+                <span>Take Attendance</span>
+              </a>
+            </li>
+      
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+      
+      
+            <!-- Nav Item - Student list -->
+            <li class="nav-item">
+              <a class="nav-link" href={{hostName}}/student-list>
+                <!-- <i class="fas fa-fw fa-folder"></i> -->
+                <i class="fas fa-table"></i>
+                <span>Student List</span>
+              </a>
+            </li>
+      
+            <!-- Nav Item - Student Daily Attendance Record -->
+            <li class="nav-item">
+              <a class="nav-link collapsed" href={{hostName}} data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <!-- <i class="fas fa-fw fa-chart-area"></i> -->
+                <i class="fas fa-list-ol"></i>
+                <span>Daily Attendance Log</span>
+              </a>
+              <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionSidebar">
+                <div class="bg-white py-2 collapse-inner rounded">
+                  <a class="collapse-item" href={{hostName}}/select-per-class-for-present>Present</a>
+                  <a class="collapse-item" href={{hostName}}/select-per-class-for-absent>Absent</a>
+                </div>
+              </div>
+            </li>
+      
+            {{!-- <!-- Nav Item - Student Monthly Attendance Record -->
+            <li class="nav-item">
+              <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                <!-- <i class="fas fa-fw fa-table"></i> -->
+                <i class="far fa-calendar-alt"></i>
+                <span>Monthly Attendance Log</span>
+              </a>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                <div class="bg-white py-2 collapse-inner rounded">
+                  <a class="collapse-item" href="monthly-present.html">Present</a>
+                  <a class="collapse-item" href="monthly-absent.html">Absent</a>
+                </div>
+              </div>
+            </li> --}}
+
+            <!-- Nav Item - latecomers -->
+            <li class="nav-item">
+              <a class="nav-link" href={{hostName}}/select-per-class-for-latecomers>
+                <i class="fas fa-list-ol"></i>
+                <span>latecomers List</span>
+              </a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+      
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+              <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+      
+        </ul>
+        <!-- End of Sidebar -->
+
+        <div id="content-wrapper" class="d-flex flex-column">
+          
+          <!-- Main Content -->
+          <div id="content">
+
+            {{{ body }}}
+
+          </div>
+
+        </div>
+    </div>
+
+  <!-- Bootstrap core JavaScript-->
+
+  <!-- public/vendor/js/jquery.min.js -->
+  <script src={{hostName}}/static/vendor/js/jquery.min.js></script>
+
+  <!-- public/vendor/js/bootstrap.bundle.min.js -->
+  <script src={{hostName}}/static/vendor/js/bootstrap.bundle.min.js></script>
+
+  <!-- Core plugin JavaScript-->
+  <!-- public/vendor/js/jquery.easing.min.js -->
+  <script src={{hostName}}/static/vendor/js/jquery.easing.min.js></script>
+
+  <!-- Custom scripts for all pages-->
+  <!-- public/vendor/js/sb-admin-2.min.js -->
+  <script src={{hostName}}/static/vendor/js/sb-admin-2.min.js></script>
+
+  <!-- Image upload & Image preview plugin-->
+  <!-- public/vendor/js/upload-image.js -->
+  <script src={{hostName}}/static/js/upload-image.js></script>
+
+</body>
+
+</html>

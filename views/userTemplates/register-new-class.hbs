@@ -1,0 +1,103 @@
+
+
+
+
+            <!-- Topbar -->
+            <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+              <!-- page heading -->
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item align-items-center">
+                  <div class="d-sm-flex align-items-center">
+                    <h1 class="h3 mb-0 text-gray-800">Class Topic Entry</h1>  
+                  </div>
+                </li>
+
+              </ul>
+              <!-- Topbar Navbar -->
+              <ul class="navbar-nav ml-auto">
+      
+                <div class="topbar-divider d-none d-sm-block"></div>
+
+                <!-- Nav Item - User Information -->
+                <li class="nav-item dropdown no-arrow">
+                  <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="mr-2 d-none d-lg-inline text-gray-600 small">Course Instructor</span>
+                    <i class="fas fa-user-circle"></i>
+                  </a>
+                  
+                </li>
+                
+
+              </ul>
+            </nav>
+
+            <!-- Begin Page Content -->
+            <!-- container-fluid -->
+            <div class="container-fluid">
+            
+              <!-- Nested Row within Card Body -->
+              <div class="row">
+
+                <div class="col-lg-7">
+                    <div class="p-5">
+                        
+                      <form class="user" method="POST" action="/register-new-class">
+                          <div class="form-group">
+                            <input type="text" name="inputTopicName" class="form-control form-control-user" id="inputTopicName" placeholder="Class Topic" required>     
+                          </div>
+                          <div class="form-group">
+                            <input type="time" name="inputClassStartTime" class="form-control form-control-user" id="inputClassStartTime" placeholder="Class Start time">
+                          </div>
+                          <div class="form-group">
+                            <input type="date" name="inputClassDate" class="form-control form-control-user" id="inputClassDate" placeholder="Date">
+                          </div>
+                          
+                          {{!-- <div class="form-group">
+                            <input type="hidden" name="inputClassAttnAllownaceTime" class="form-control form-control-user" id="inputClassAttnAllownaceTime" placeholder="" value="5">
+                          </div> --}}
+                          
+                          <button type="submit" name="" class="btn btn-primary btn-user btn-block">
+                              Submit
+                          </button>
+                          
+              
+                      </form>
+                        
+                    </div>
+
+                </div>
+
+                <div class="col-lg-5 card">
+                  <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">Instructions</h6>
+                  </div>
+                  <div class="card-body">
+                    <p>
+                      Course Instructor will enter class topic, class time and date. All records will be saved in database
+                    </p>
+                    {{!-- <p class="mb-0">
+                      Before working with this theme, you should become familiar with the Bootstrap framework, especially the utility classes.
+                    </p> --}}
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+
+  {{!-- <!-- Bootstrap core JavaScript-->
+  <script src="public/vendor/js/jquery.min.js"></script>
+  <script src="public/vendor/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="public/vendor/js/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for all pages-->
+  <script src="public/vendor/js/sb-admin-2.min.js"></script>
+
+  <!-- Image upload & Image preview plugin-->
+  <script src="public/vendor/js/upload-image.js"></script> --}}
+
+{{!-- </body>
+
+</html> --}}
